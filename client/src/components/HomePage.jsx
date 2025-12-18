@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function HomePage() {
     return(
             <div className="flex min-h-screen items-center justify-center bg-white px-6">
@@ -14,10 +16,10 @@ function HomePage() {
 
         <div className="mt-10 flex items-center justify-center gap-3">
           <button className="rounded-md bg-black px-4 py-2 text-xs font-semibold text-white">
-            Log in
+            <Link to="/login">Log In</Link>
           </button>
           <button className="rounded-md border border-gray-300 bg-white px-4 py-2 text-xs font-semibold text-black">
-            Sign In
+            <Link to="/signup">Sign Up</Link>
           </button>
         </div>
       </div>

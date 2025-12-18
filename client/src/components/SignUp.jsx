@@ -1,10 +1,11 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 function SignUp() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-linear-to-r from-gray-900 to-black text-white">
       <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-extrabold text-center text-yellow-400 mb-6">
+        <h1 className="text-3xl font-extrabold text-center from-yellow-400 to-yellow-600 drop-shadow-md mb-3">
           Sign Up
         </h1>
         <form className="space-y-4">
@@ -43,10 +44,13 @@ function SignUp() {
           </div>
           <button
             type="submit"
-            className="w-full py-2 px-4 mt-4 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            className="w-full py-2 px-4 mt-4 bg-blue-600 text-black font-semibold rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           >
             Create Account
           </button>
+          <div className="mt-4  text-center">
+             <Link to="/login" className="text-sm text-blue-400 hover:underline">Log In</Link>
+          </div>
         </form>
       </div>
     </div>

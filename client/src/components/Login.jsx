@@ -38,10 +38,11 @@ function Login() {
             Login
           </button>
         </form>
-        <div className="mt-4 text-center">
+        <div className="mt-4  text-center">
           <Link to="/password-reset" className="text-sm text-blue-400 hover:underline">
             Forgot your password?
-          </Link>
+          </Link><br/>
+          <Link to="/signup" className="text-sm text-blue-400 hover:underline">No Account? Sign up</Link>
         </div>
       </div>
     </div>

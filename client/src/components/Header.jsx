@@ -21,12 +21,12 @@ function Header() {
         <div className="flex items-center">
           <img src="client/src/assets/icons8-elden-ring-96.png" />
           <h1 className="text-4xl font-serif text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-yellow-600 drop-shadow-md">
-            Elden Ring Tracker
+            Elden Ring Build Rater
           </h1>
         </div>
 
         <div className="flex items-center gap-3">
-          <Label text="Dark Mode" />
+          <Label className="text-xl" text="Dark Mode" />
           <Switch/>
         </div>
       </div>
